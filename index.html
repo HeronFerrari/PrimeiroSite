@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro site</title>
+    <!-- arquivo css-->
+    <link rel="stylesheet" href="../projeto/css/parteEsquerda.css"></link>
+    
+    <!-- fontes usadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- parte esquerda do site-->
+    <div id="parteEsquerda">
+        <button onclick="tocarNaruto()">Naruto theme !</button>
+        <audio class="aberturaAudio" id="AberturaNaruto" src="audio/Naruto Opening 1 _ R★O★C★K★S (HD) [4t__wczfpRI].mp3"></audio>
+        <img src="img/VilaOcultaDasFolhas.webp" alt="Vila Oculta das Folhas" class="fundoEsquerdo">
+        <div id="cabecalho">
+            <img class="enfeiteEsquerdo" src="img/Akatsuki-Logo.png" alt="Nuvem Akatsuki">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/2560px-Naruto_logo.svg.png" alt="imagem logo">
+            <h1 class="permanent-marker-regular">Naruto Side !</h1>
+        </div>
+        <h2>Sinopse</h2>
+        <p class="sinopse">Naruto é um anime japonês ambientado em vilas onde existem cidadãos e ninjas em treinamento. O anime nos mostra a vida de um menino orfão com uma besta selada dentro de si mesmo, que procura chamar atenção por onde passa e tem a ambição de ser um grande hokage e superar a si mesmo sempre ! </p>
+
+        <h2 id="">Personagens</h2>
+        <p>Aqui estão alguns personagens poderosos e importantes do anime Naruto !</p>
+            <br/>
+            <div id="personagens">
+                <div class="personagem">
+                        <img src="img/narutoShippuden.png" alt="Naruto Uzumaki">
+                        <img class="fundo-fumaca" src="img/fumaça_fundo.avif" alt="Fumaça">
+                    <p>Esse aí é o cara do anime mesmo</p>
+                </div>
+               
+                <div class="personagem">
+                    <img src="img/Madara.webp" alt="Madara Uchiha">
+                    <p>Esse é chitado, tenso..</p>
+                </div>
+
+                <div class="personagem">
+                    <img src="img/Itachi_Uchiha_Naruto.webp" alt="Itachi Uchiha">
+                    <p>Esse aí é um dos melhores da franquia</p>
+                </div>
+
+                <div class="personagem">
+                    <img src="img/sasuke_shippuden.jpg" alt="Sasuke Uchiha">
+                    <p>Poderoso e matador de irmão</p>
+                </div>
+
+                <div class="personagem">
+                    <img src="img/kakashi.png" alt="Kakashi Hatake">
+                    <p>Esse aí é o queridinho do anime</p>
+                </div>
+               
+            </div>
+    </div>
+
+    <div class="separador"></div>
+
+    <!-- parte direita do site-->
+    <div id="parteDireita">
+        <button onclick="tocarDragonBall()">Dragon Ball Z theme !</button>
+        <audio id="AberturaDBZ" class="aberturaAudio" src="audio/Dragon Ball Z - Abertura em Português BR (ver. 2013) - We Gotta Power [GJtb9xiC0Pk].mp3"></audio>
+        <img src="img/cenarioDragonBall.webp" alt="Cidade Dragon Ball Z" class="fundoDireito"> 
+        <div id="cabecalho">
+            <img class="enfeiteDireito" src="img/esfera.png" alt="Dragon Ball Z Logo">
+            <img src="https://sm.ign.com/ign_br/screenshot/default/dragon-ball-z-dbz-nuevo-logo-by-saodvd-d8rx6aw_pz8n.png" alt="imagem logo">
+            <h1 style="color: rgb(11, 65, 105);" class="permanent-marker-regular">Dragon ball Side !</h1>
+        </div>
+        <h2>Sinopse</h2>
+        <p class="sinopse">O anime Dragon Ball Z é sequência do sucesso japonês Dragon ball. Conta a história de um extraterrestre que veio ainda criança para destruir o planeta Terra, porém ao bater a cabeça alguma coisa aconteceu.. e desde então ele se fortalece cada dia mais enquanto se depara com extraterrestres ameaçadores cada vez mais fortes - e isso deixa animado para treinar e evoluir para proteger seu planeta que o acolheu ! -</p>
+        
+        <h2>Personagens</h2>
+        <p>Aqui estão alguns personagens poderosos e importantes do anime Dragon Ball Z !</p>
+            <br/>
+            <div id="personagens">
+                <div class="personagem">
+                    <img class="fundo-fumaca" src="img/fumaça_fundo.avif" alt="Fumaça">
+                    <img src="img/Goku_Base.webp" alt="Son Goku">
+                    <p>OI EU SOU O GOKU !</p>
+                </div>
+                <div class="personagem">
+                    <img src="img/Vegeta.webp" alt="Vegeta Prince of Saiyans">
+                    <p>Orgulhoso e mal humorado mas é de bom coração</p>
+                </div>
+                <div class="personagem">
+                    <img src="img/broly_super_sayan.png" alt="Broly Super Sayan">
+                    <p>Esse cara é apelão, sola naruto inteiro</p>
+                </div>
+                <div class="personagem">
+                    <img src="img/freeza.jpg" alt="Freeza final form">
+                    <p>O cara mais chato do anime, mas é forte</p>    
+                </div>
+                <div class="personagem">
+                    <img src="img/beerus.jpg" alt="Beerus the God of Destruction">
+                    <p>O deus da destruição, adora pudim</p>
+                </div>
+                
+            </div>
+        </div>
+        <br/>
+    </div>
+   <!-- Modal -->
+<div id="modal-personagem" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img id="modal-img" src="" alt="Personagem ampliado">
+        <img id="modal-fumaca" src="img/fumaça_fundo.avif" alt="Fumaça" class="modal-fumaca">
+        <p id="modal-desc"></p>
+    </div>
+    
+    <script>
+        
+    document.querySelectorAll('.personagem').forEach(function(card) {
+        card.addEventListener('click', function() {
+            const img = card.querySelector('img:not(.fundo-fumaca)');
+            const desc = card.querySelector('p');
+            document.getElementById('modal-img').src = img.src;
+            document.getElementById('modal-img').alt = img.alt;
+            document.getElementById('modal-desc').textContent = desc.textContent;
+            document.getElementById('modal-personagem').style.display = 'flex';
+        });
+    });
+    document.querySelector('.close-modal').onclick = function() {
+        document.getElementById('modal-personagem').style.display = 'none';
+    };
+    document.getElementById('modal-personagem').onclick = function(e) {
+        if(e.target === this) this.style.display = 'none';
+    };
+    // Funções para tocar as aberturas
+        function tocarNaruto() {
+            const audio = document.getElementById("AberturaNaruto");
+            if (!audio.paused) {
+        audio.pause();
+        audio.currentTime = 0;
+        } else {
+        audio.play();
+        }
+    }
+        function tocarDragonBall() {
+            const audio = document.getElementById("AberturaDBZ");
+             if (!audio.paused) {
+        audio.pause();
+        audio.currentTime = 0;
+        } else {
+        audio.play();
+        }
+    }
+    </script>
+</div>
+</body>
+</html>
