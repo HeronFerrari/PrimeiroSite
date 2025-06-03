@@ -13,6 +13,7 @@
 </head>
 <body>
     <!-- parte esquerda do site-->
+<div id="container-principal">
     <div id="parteEsquerda">
         <button onclick="tocarNaruto()">Naruto theme !</button>
         <audio class="aberturaAudio" id="AberturaNaruto" src="audio/Naruto Opening 1 _ R★O★C★K★S (HD) [4t__wczfpRI].mp3"></audio>
@@ -20,7 +21,7 @@
         <div id="cabecalho">
             <img class="enfeiteEsquerdo" src="img/Akatsuki-Logo.png" alt="Nuvem Akatsuki">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/2560px-Naruto_logo.svg.png" alt="imagem logo">
-            <h1 class="permanent-marker-regular">Naruto Side !</h1>
+            <h1 id="nomeEsquerda" class="permanent-marker-regular">Naruto Side !</h1>
         </div>
         <h2>Sinopse</h2>
         <p class="sinopse">Naruto é um anime japonês ambientado em vilas onde existem cidadãos e ninjas em treinamento. O anime nos mostra a vida de um menino orfão com uma besta selada dentro de si mesmo, que procura chamar atenção por onde passa e tem a ambição de ser um grande hokage e superar a si mesmo sempre ! </p>
@@ -68,7 +69,7 @@
         <div id="cabecalho">
             <img class="enfeiteDireito" src="img/esfera.png" alt="Dragon Ball Z Logo">
             <img src="https://sm.ign.com/ign_br/screenshot/default/dragon-ball-z-dbz-nuevo-logo-by-saodvd-d8rx6aw_pz8n.png" alt="imagem logo">
-            <h1 style="color: rgb(11, 65, 105);" class="permanent-marker-regular">Dragon ball Side !</h1>
+            <h1 id="nomeDireita" style="color: rgb(11, 65, 105);" class="permanent-marker-regular">Dragon ball Side !</h1>
         </div>
         <h2>Sinopse</h2>
         <p class="sinopse">O anime Dragon Ball Z é sequência do sucesso japonês Dragon ball. Conta a história de um extraterrestre que veio ainda criança para destruir o planeta Terra, porém ao bater a cabeça alguma coisa aconteceu.. e desde então ele se fortalece cada dia mais enquanto se depara com extraterrestres ameaçadores cada vez mais fortes - e isso deixa animado para treinar e evoluir para proteger seu planeta que o acolheu ! -</p>
@@ -100,20 +101,18 @@
                 </div>
                 
             </div>
-        </div>
-        <br/>
     </div>
    <!-- Modal -->
-<div id="modal-personagem" class="modal" style="display:none;">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <img id="modal-img" src="" alt="Personagem ampliado">
-        <img id="modal-fumaca" src="img/fumaça_fundo.avif" alt="Fumaça" class="modal-fumaca">
-        <p id="modal-desc"></p>
+    <div id="modal-personagem" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-img" src="" alt="Personagem ampliado">
+            <img id="modal-fumaca" src="img/fumaça_fundo.avif" alt="Fumaça" class="modal-fumaca">
+            <p id="modal-desc"></p>
+        </div>
     </div>
-    
+
     <script>
-        
     document.querySelectorAll('.personagem').forEach(function(card) {
         card.addEventListener('click', function() {
             const img = card.querySelector('img:not(.fundo-fumaca)');
@@ -150,6 +149,9 @@
         }
     }
     </script>
+
+    </div>
 </div>
+
 </body>
 </html>
